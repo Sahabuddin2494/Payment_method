@@ -1,0 +1,19 @@
+.R_payment_system{
+background-color: #F3F3F3;
+}
+.R_pay_sys_one_img{
+    width:30px;
+    height:25px;
+}
+#show-me-two{
+    display:none;
+}
+#show-me-three{
+    display: none;
+}
+#show-me-four{
+    display: none;
+}
+#show-me-five{
+    display: none;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6 bg-info">
+                <p>left_end</p>
+            </div>
+            <!-- important_section_start -->
+            <div class="col-lg-6">
+                <section class="R_payment_system">
+                    <div class="R_payment_system_one py-1">
+                        <img src="Rocket.png" alt="" class="img-fluid R_pay_sys_one_img" >
+                        <input  class="form-check-input" type="radio" name="payment_method" id="see-me" value="Rocket">Rocket 
+                    </div>
+                    <!-- one_item_end -->
+                  
+                    <div class="R_payment_system_one py-1">
+                        <img src="nagad.png" alt="" class="img-fluid R_pay_sys_one_img" >
+                        <input class="form-check-input" type="radio" name="payment_method" id="look-me" value="Nagad">Nagad 
+                    </div>
+                    <!-- one_item_end -->
+                    <div class="R_payment_system_one py-1">
+                        <img src="upay.jpg" alt="" class="img-fluid R_pay_sys_one_img" >
+                        <input class="form-check-input" type="radio" name="payment_method" id="look-again" value="Upay">Upay 
+                    </div>
+                    <!-- last_item_end -->
+                    <div class="R_payment_system_one py-1">
+                        <img src="bkash.png" alt="" class="img-fluid R_pay_sys_one_img" >
+                        <input class="form-check-input" type="radio" name="payment_method" id="look-bkash" value="Bkash">Bkash 
+                    </div>
+                    <!-- hidden_part_start -->
+                    <!-- one_item_end -->
+                    <div id="show-me-two" class="R_payment_details py-2 bg-info">
+                        <p>দয়া করে আমাদের এই 01915431229 rocket পার্সনাল নম্বর এ 0 টাকা পাঠান।</p>
+                    </div>
+                    <!-- one_item_end -->
+                    <div id="show-me-three" class="R_payment_details py-2 bg-danger">
+                        <p>দয়া করে আমাদের এই 01915 nagot পার্সনাল নম্বর এ 0 টাকা পাঠান।</p>
+                    </div>
+                    <!-- one_item_end -->
+                    <div id="show-me-four" class="R_payment_details py-2 bg-danger">
+                        <p>দয়া করে আমাদের এই 01915 upay পার্সনাল নম্বর এ 0 টাকা পাঠান।</p>
+                    </div>
+                    <!-- one_item_end -->
+                    <div id="show-me-five" class="R_payment_details py-2 bg-danger">
+                        <p>দয়া করে আমাদের এই 01915 bkash পার্সনাল নম্বর এ 0 টাকা পাঠান।</p>
+                    </div>
+                </section>
+            </div>
+            <!-- important_section_end -->
+        </div>
+        </div>
+    </section>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.js"></script>
+
+<!-- for_payment_system -->
+<script type="text/javascript">
+    $(document).ready(function ()
+    {
+        $("#watch-me").click(function()
+        {
+            $("#show-me:hidden").show('slow');
+            $("#show-me-two").hide();
+            $("#show-me-three").hide();
+        });
+        $("#watch-me").click(function()
+        {
+            if($('watch-me').prop('checked')===false)
+            {
+                $('#show-me').hide();
+            }
+        });
+
+        $("#see-me").click(function()
+        {
+            $("#show-me-two:hidden").show('slow');
+            $("#show-me").hide();
+            $("#show-me-three").hide();
+            $("#show-me-four").hide();
+            $("#show-me-five").hide();
+        });
+        $("#see-me").click(function()
+        {
+            if($('see-me-two').prop('checked')===false)
+            {
+                $('#show-me-two').hide();
+            }
+        });
+                // see-me_end
+        $("#look-me").click(function()
+        {
+            $("#show-me-three:hidden").show('slow');
+            $("#show-me").hide();
+            $("#show-me-two").hide();
+            $("#show-me-four").hide();
+            $("#show-me-five").hide();
+        });
+        $("#look-me").click(function()
+        {
+            if($('see-me-three').prop('checked')===false)
+            {
+                $('#show-me-three').hide();
+            }
+        });
+        // look-me_end
+        $("#look-again").click(function()
+        {
+            $("#show-me-four:hidden").show('slow');
+            $("#show-me").hide();
+            $("#show-me-two").hide();
+            $('#show-me-three').hide();
+            $('#show-me-five').hide();
+        });
+        $("#look-again").click(function()
+        {
+            if($('see-me-four').prop('checked')===false)
+            {
+                $('#show-me-four').hide();
+            }
+        });
+       // look-again_end
+       $("#look-bkash").click(function()
+        {
+            $("#show-me-five:hidden").show('slow');
+            $("#show-me").hide();
+            $("#show-me-two").hide();
+            $('#show-me-three').hide();
+            $('#show-me-four').hide();
+        });
+        $("#look-bkash").click(function()
+        {
+            if($('see-me-five').prop('checked')===false)
+            {
+                $('#show-me-five').hide();
+            }
+        });
+    //    look_bkash_end
+    });
+</script>
+    <!-- for_payment_system -->
+</body>
+</html>
